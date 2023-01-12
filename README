@@ -1,0 +1,34 @@
+Maddie Liu 101247136
+Please run this program with:   make   ./a4
+
+main.cc
+launch the program
+
+View.h View.cc
+Provides a menu, takes input, displays output
+
+Controller.h Controller.cc 
+Controls the interaction of Songify with the View, and Contains a playlist of the most currently searched for Songs.
+
+Songify.h Songify.cc
+This class contains a collection of Albums. Users can add or remove Albums and add or remove Songs to
+and from those Albums. In addition, in conjunction with the Controller and View objects, it allows user
+to browse Albums. Finally users can do searches of all Songs and create playlists based on Criteria they
+specify.
+
+
+MediaFactory.h MediaFactory.cc
+This class is used to create Songs, Albums, and Criteria objects. It separates our application logic from
+the creation of Songs, Albums, or Criteria types.
+
+Criteria.cc Criteria.h
+This class is used to match user searches to matching Song objects. There are an additional three derived
+classes arranged in a diamond hierarchy, A_Criteria, C_Criteria, and AorC_Criteria.
+
+Album.cc Album.h
+Contains information about the album.
+Maintains a collection of Songs.
+
+
+Song.cc Song.h 
+Contains information about the song
